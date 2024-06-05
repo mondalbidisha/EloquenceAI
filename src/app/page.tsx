@@ -23,7 +23,7 @@ export default async function Home() {
               className="rounded-2xl animate-bounce"
             />
           </div>
-          <span className="text-gradient text-xl text-semibold tracking-wide">Enhance your writing with our AI-powered assistant, ensuring clarity, precision, and creativity in every word.</span>
+          <span className="text-lime-50 text-xl text-semibold tracking-wide">Enhance your writing with our AI-powered assistant, ensuring clarity, precision, and creativity in every word.</span>
         </h1>
       </div>
 

@@ -60,7 +60,7 @@ function PlaygroundSection({ templateOptions }: PlaygroundSectionProps) {
         />
         <Button
           disabled={isLoading || inputText.length === 0}
-          className="bg-accent text-neutral-100 hover:bg-[#503dee] rounded-xl"
+          className="bg-lime-200 text-lime-950 font-bold hover:animate-bounce rounded-xl"
           onClick={handleGenerate}
         >
           Generate
