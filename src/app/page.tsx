@@ -17,7 +17,8 @@ export default async function Home() {
           <div className="flex justify-center items-center self-center mt-auto mb-10">
             <Image
               src={AItoolpng}
-              alt=""
+              alt="cute-ai-image"
+              priority={true} 
               height="250"
               width="250"
               className="rounded-2xl animate-bounce"
