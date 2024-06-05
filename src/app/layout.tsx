@@ -6,8 +6,8 @@ import classNames from "../utils/classNames";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TextShine.ai",
-  description: "AI Support for your writing",
+  title: "EloquenceAI",
+  description: "Enhance your writing with our AI-powered assistant, ensuring clarity, precision, and creativity in every word.",
 };
 
 export default function RootLayout({

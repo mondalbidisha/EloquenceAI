@@ -31,7 +31,6 @@ function PlaygroundSection({ templateOptions }: PlaygroundSectionProps) {
         inputText,
         templateId: selectedTemplateId,
       });
-
       if (data?.text) {
         setDisplayText(data.text);
       }
@@ -43,10 +42,10 @@ function PlaygroundSection({ templateOptions }: PlaygroundSectionProps) {
   };
 
   return (
-    <div className="max-w-[800px] mx-auto mt-16">
+    <div className="max-w-[900px] mx-auto mt-10">
       <Textarea
         className="bg-neutral-800 text-neutral-100"
-        placeholder="Start Writing..."
+        placeholder="Start by writing or pasting text ..."
         value={inputText}
         onChange={(event) => {
           setInputText(event.target.value);
