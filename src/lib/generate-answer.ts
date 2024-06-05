@@ -57,6 +57,6 @@ export const generateAnswer = async (data: {
       templateId: template.id,
     },
   });
-
+  debugger
   return result.text;
 };

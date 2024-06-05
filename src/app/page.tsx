@@ -1,6 +1,8 @@
 import Header from "@/components/header";
 import PlaygroundSection from "@/components/playground-section";
 import prisma from "@/prisma";
+import Image from "next/image";
+import AItoolpng from "@/assets/ai-writing-tool.png";
 
 export default async function Home() {
   const templateOptions = await prisma.template.findMany({
@@ -8,22 +10,21 @@ export default async function Home() {
   });
 
   return (
-    <main className="container fle min-h-screen mx-auto px-5 lg:px-5">
+    <main className="container fle min-h-screen mx-auto px-5 lg:px-5 scroll-smooth">
       <Header />
-      {/* hero section  */}
-      <div className="text-center mt-[10vh]">
-        <h1 className="text-neutral-100 text-4xl xs:text-5xl sm:text-6xl font-bold text-center mb-5">
-          <span className="block">AI Support</span>
-          <span className="text-gradient"> for your writing</span>
+      <div className="text-center mt-[4vh]">
+        <h1 className="text-neutral-100 text-center mb-5">
+          <div className="flex justify-center items-center self-center mt-auto mb-10">
+            <Image
+              src={AItoolpng}
+              alt=""
+              height="250"
+              width="250"
+              className="rounded-2xl animate-bounce"
+            />
+          </div>
+          <span className="text-gradient text-xl text-semibold tracking-wide">Enhance your writing with our AI-powered assistant, ensuring clarity, precision, and creativity in every word.</span>
         </h1>
-        <p className="text-center text-neutral-100 text-[0.60rem] xs:text-sm sm:text-base">
-          Unlock Your Writing{" "}
-          <span className="underline decoration-wavy underline-offset-8 decoration-secondary">
-            Magic.
-          </span>{" "}
-          Effortlessly refine your messages.
-        </p>
-        {/* <div className="absolute liner-gradient-hero h-[40vh] w-full top-0 -z-[5]" /> */}
       </div>
 
       <PlaygroundSection templateOptions={templateOptions} />
