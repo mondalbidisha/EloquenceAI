@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "EloquenceAI",
-  description: "Enhance your writing with our AI-powered assistant, ensuring clarity, precision, and creativity in every word.",
+  description: "Enhance your writing with our AI-powered assistant.",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames("bg-neutral-800", inter.className)}>
+      <body className={classNames("bg-lime-950", inter.className)}>
         {children}
       </body>
     </html>
